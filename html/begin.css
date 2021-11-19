@@ -1,0 +1,76 @@
+body {
+    background: white;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .h-img {
+    width: 250px;
+    height: 40px;
+  }
+/* メイン画像 */
+  .m-img-main {
+    width: 500px;
+    height: 500px;
+  }
+/* メインの文字 */
+  .m-title {
+    font-weight: bolder;
+    font-size: 50px;
+    letter-spacing: 20px;
+    margin-bottom: 10px;
+  }
+  .m-title2 {
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 15px;
+    margin-bottom: 30px;
+  }
+  .m-title3{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+  }
+/* コミュニティ題名 */
+section{
+  padding-top: 40px;
+}
+.s-title{
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+.s-title2{
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+.s-title3{
+  font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+/* コミュニティ内容 */
+.under{
+  background: linear-gradient(transparent 60%,yellow 50%)
+}
+.s-p1{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.s-p2{
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+/* コミュニティ写真 */
+.s-img01{
+  width: 450px;
+  height: 350px;
+}
