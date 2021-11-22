@@ -68,9 +68,64 @@ section{
   letter-spacing: 3px;
   margin-bottom: 20px;
 }
-
+.s-p3{
+  margin-bottom: 30px;
+}
+.s-part{
+  margin-bottom: 20px;
+}
 /* コミュニティ写真 */
-.s-img01{
+.s-img{
   width: 450px;
   height: 350px;
+}
+.s-img02{
+  width: 500px;
+  height: 200px;
+}
+/* メリット内容 */
+.s-meritto{
+ text-align: center;
+}
+.s-red{
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+.s-m01{
+  background-color: lightsteelblue;
+  border-radius: 10px;
+}
+.s-m02{
+  background-color: lightgoldenrodyellow;
+  border-radius: 10px;
+}
+.s-m03{
+  background-color: oldlace;
+  border-radius: 10px;
+}
+/* メリット場所のバナー */
+.banner{
+  margin-top: 70px;
+  width: 100%;
+}
+.s-p4{
+  font-weight: bold;
+  font-size: 20px;
+}
+.b-red{
+  color: red;
+  font-size: 40px;
+
+}
+.s-red{
+  font-size: 20px;
+}
+.s-p5{
+  color: olivedrab;
+  font-weight: bold;
+}
+/* 創設者の思い */
+.blue-color{
+  width: 100%;
 }
