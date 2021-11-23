@@ -11,23 +11,23 @@
     <link rel="stylesheet" href="reset.css">
   </head>
   <body>
-   <div class="container">
+   
 <!--最上にあるヘッダー-->
      <header>
-      <div class="h-ver">
-        <img class="h-img" src="logo.png" alt="タイトル">
-        <p class="h-p">業界最安値で「挫折OK」のプログラミングスクールです！</p>
-        <button type="button" class="btn-lg btn-info text-white w-25">コミュニティ応募はこちら</button>
-      </div>
+        <img class="h-img" src="logo.png" alt="タイトル">業界最安値で「挫折OK」のプログラミングスクールです！
+        <button type="button" class="btn-lg btn-info text-white w-25 ">コミュニティ応募はこちら</button>
      </header>
 <!--見入り-->
-     <main>
+<div class="container">
+     <main class="m-head">
       <div class="m-main">
-        <img class="m-img-main" src="main-image.jpg" alt="メイン">
         <h1 class="m-title">完全初心者向け</h1>
         <h2 class="m-title2">プログラミングコミュニティ</h2>
         <h3 class="m-title3">学習の「キッカケと場所」を提供します！</h3>
-        　<button type="button" class="btn-lg btn-info text-white w-25">コミュニティ応募はこちら</button>
+        　<button type="button" class="btn-lg btn-info text-white w-75">コミュニティ応募はこちら</button>
+      </div>
+      <div class="m-img">
+        <img class="m-img-main" src="main-image.jpg" alt="メイン">
       </div>
      </main>
 <!--コミュニティ内容-->
@@ -35,12 +35,16 @@
          <h1 class="s-title">ABOUT CodeBegin</h1>
          <h2 class="s-title2">プログラミングコミュニティの</h2>
          <h3 class="s-title3">「CodeBegin」とは</h3>
+      <div class="s-box">
        <div class="s-part">
-         <img class="s-img" src="point01.jpg" alt="ポイント01">
          <p class="s-p1"><span class="under">Point 1</span></p>
          <p class="s-p2">目標は「月3万円」稼ぐこと</p>
          <p class="s-p3">まずは「月3万円を稼ぐスキル」を身につけましょう。
           目標から逆算したカリキュラムなので、最終ゴールは「案件の受注」となります。勉強するのも素晴らしいですが、それは準備運動です。本番に挑戦しましょう。</p>
+       </div>
+       <div class="s-foto1">
+        <img class="s-img" src="point01.jpg" alt="ポイント01">
+       </div>
        </div>
        <div class="s-part">
         <p class="s-p1"><span class="under">Point 2</span></p>
@@ -106,17 +110,17 @@
         <h3 class="s-title3">創業者の思い</h3>
       <div class="blue-color">
         <img src="bg_color-pc.jpg">
-      <div class="mana">
-        <img src="founder.jpg">
+      <div class="manabu1">
+        <img class="mana" src="founder.jpg">
       </div>
       </div>
-      <p class="s-p3">世の中のプログラミングスクールに対して、問題意識がありました。それは「価格が高い…」ということ。
+      <p class="s-p3">世の中のプログラミングスクールに対して、問題意識がありました。それは「価格が高い…」ということ。</p>
 
-        価格が高いと、仮に挑戦してみて飽きてしまっても、挫折しづらいですよね。世の中では「挫折=ネガティヴ」と思われがちですが、僕はそう思いません。
+      <p class="s-p3">価格が高いと、仮に挑戦してみて飽きてしまっても、挫折しづらいですよね。世の中では「挫折=ネガティヴ」と思われがちですが、僕はそう思いません。</p>
         
-        <span class="s-black">1回の成功を掴むには、その裏に10回の挫折があります。</span>
+      <p class="s-p3"><span class="s-black">1回の成功を掴むには、その裏に10回の挫折があります。</span></p>
         
-        CodeBeginは価格も安く、挫折しても全額返金です。プログラミングに興味があるなら、ぜひ挑戦してみてください。</p>
+      <p class="s-p3">CodeBeginは価格も安く、挫折しても全額返金です。プログラミングに興味があるなら、ぜひ挑戦してみてください。</p>
      </section>
   <!--運営者-->
      <section>
@@ -124,19 +128,19 @@
        <h2 class="s-title2">平和で暖かいコミュニティが、</h2>
        <h3 class="s-title3">待っています！</h3>
       <div class="manabusan">
-        <img src="manabu.png" alt="マナブさんの写真">
-        <p class="s-p3"><span class="s-black">創業者：マナブ</span>
-          昔は営業で消耗していました。しかしプログラミングに出会い、そこから「引き込もれる人生」がスタート。今はブログやYouTube発信をメインで生きていますが、僕を救ったスキルが「プログラミング」です。
+        <img class="unei" src="manabu.png" alt="マナブさんの写真">
+        <p class="s-name">創業者：マナブ</p>
+        <p class="s-p3">昔は営業で消耗していました。しかしプログラミングに出会い、そこから「引き込もれる人生」がスタート。今はブログやYouTube発信をメインで生きていますが、僕を救ったスキルが「プログラミング」です。
         </p>
       </div>
       <div class="mittani">
-        <img src="mittani.jpg" alt="みったにさんの写真">
-        <p class="s-p3"><span class="s-black">専属講師：みったに</span>
-          毎日の満員電車が苦手でしたが、プログラミングに出会ったことで人生が変わりました。リモートワークが可能なので、どこでも好きなところで作業ができます。自由な働き方を目指すならプログラミングは最高です。
+        <img class="unei" src="mittani.jpg" alt="みったにさんの写真">
+        <p class="s-name">専属講師：みったに</p>
+        <p class="s-p3">毎日の満員電車が苦手でしたが、プログラミングに出会ったことで人生が変わりました。リモートワークが可能なので、どこでも好きなところで作業ができます。自由な働き方を目指すならプログラミングは最高です。
         </p>
       </div>
       <div class="menber">
-        <p class="s-p3"><span class="s-black">CodeBeginのコミュニティメンバー</span>
+        <p class="p-menber">CodeBeginのコミュニティメンバー</p>
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -164,13 +168,14 @@
             </a>
           </div>
       </div>
+  <!-- バナー2 -->
       <div class="s-banner2">
         <img class="banner1" src="banner03-bg-sp.jpg" alt="バナー">
-        <p class="s-p2"><span class="s-red">それでは、お待ちしております！</span></p>
+        <p class="s-p3"><span class="s-red2">それでは、お待ちしております！</span></p>
         <p class="s-p3">コミュニティ健全化のために、募集人数は絞っています。
           下記より応募しつつ、同時にアンケート回答もお願いします。</p>
         <p class="s-p5">\  挫折してOK、全額返金します　/</p>
-        <button type="button" class="btn btn-info">コミュニティ応募はこちら</button>
+        <button type="button" class="btn-lg btn-info text-white w-50">コミュニティ応募はこちら</button>
       </div>
      </section>
   <!--質問コーナー-->
@@ -180,10 +185,15 @@
        <h3 class="s-title3">よくある質問</h3>
     
      </section>
+    </div>
   <footer>
+  <div class="f-logo">
     <img class="f-img" src="logo.png" alt="フッタータイトル">
+  </div>
+  <p class="p-f">
     Copyright © 2021 CodeBegin All Right Reserved.
+  </p>
   </footer>
-   </div>
+  
   </body>
 </html>
