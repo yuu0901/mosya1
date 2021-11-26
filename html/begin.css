@@ -147,6 +147,7 @@ section{
   background-color: papayawhip;
   width: 100%;
   height: 450px;
+  margin-bottom: 40px;
 }
 .r-box1{
   display: flex;
@@ -165,30 +166,72 @@ section{
 
 
 /* メリット内容 */
+/* メリット題名 */
 .s-meritto{
  text-align: center;
+ margin-bottom: 50px;
 }
-.s-red{
-  color: red;
-  font-size: 30px;
-  font-weight: bold;
-}
+
+/* メリット1つ目 */
 .s-m01{
+  height: 550px;
+  width: 300px;
   background-color: lightsteelblue;
   border-radius: 10px;
+  margin: 20px 10px 30px 0px;
 }
+
+/* メリット2つ目 */
 .s-m02{
+  height: 550px;
+  width: 300px;
   background-color: lightgoldenrodyellow;
   border-radius: 10px;
+  margin: 20px 10px 30px 10px;
 }
+
+/* メリット3つ目 */
 .s-m03{
+  height: 550px;
+  width: 300px;
   background-color: oldlace;
   border-radius: 10px;
+  margin: 20px 0px 30px 10px;
 }
-/* メリット場所のバナー */
+
+/* メリットの中身（文字や写真） */
+.s-red{
+  position: relative;
+  top: 120px;
+  color: red;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.merit{
+  position: relative;
+  top: 100px;
+  left: 100px;
+  width:100px;
+  height: 100px;
+}
+.p-meritto{
+  position: relative;
+  top: 150px;
+  font-size: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 30px;
+}
+
+
+
+/* メリットのバナー */
 .banner{
-  margin-top: 70px;
+ overflow: hidden;
   width: 100%;
+  height: 450px;
 }
 .s-p4{
   font-weight: bold;
@@ -198,9 +241,6 @@ section{
   color: red;
   font-size: 40px;
 
-}
-.s-red{
-  font-size: 20px;
 }
 .s-p5{
   color: olivedrab;
