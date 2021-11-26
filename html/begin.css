@@ -2,7 +2,7 @@ body {
     background: #fff;
   }
   .container {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
   }
 
@@ -228,14 +228,22 @@ section{
 
 
 /* メリットのバナー */
+.s-banner{
+  overflow: hidden;
+}
 .banner{
- overflow: hidden;
-  width: 100%;
+  margin: 0 -50px 20px -50px;
+  width: 1020px;
   height: 450px;
 }
 .s-p4{
   font-weight: bold;
   font-size: 20px;
+}
+.shot-red{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
 }
 .b-red{
   color: red;
@@ -246,7 +254,12 @@ section{
   color: olivedrab;
   font-weight: bold;
 }
+
+
 /* 創設者の思い */
+.sousetu-back{
+  width: 100%;
+}
 .blue-color{
   width: 100%;
 }
