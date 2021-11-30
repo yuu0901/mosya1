@@ -229,7 +229,7 @@ section{
 
 /* メリットのバナー */
 .s-banner{
-  overflow: hidden;
+  width: 100vw;
 }
 .banner{
   margin: 0 -50px 20px -50px;
