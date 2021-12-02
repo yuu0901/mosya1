@@ -145,7 +145,8 @@ section{
 /* ロードマップ表 */
 .s-rod{
   background-color: papayawhip;
-  width: 100%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   height: 450px;
   margin-bottom: 40px;
 }
@@ -156,7 +157,10 @@ section{
 }
 .map{
   margin-top: 40px;
-  margin-left: 30px;
+  margin-left: 100px;
+}
+.r-button{
+  margin-top: 30px;
 }
 .rodmap{
   width: 300px;
