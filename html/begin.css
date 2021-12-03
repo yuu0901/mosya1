@@ -280,11 +280,19 @@ section{
 
 
 /* 創設者の思い */
-.sousetu-back{
-  width: 100%;
+.mana-box{
+  position: absolute;
 }
+.sousetu-back{
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  position: relative;
+ 
+}
+
 .blue-color{
   width: 100%;
+  
 }
 .mana{
   width: 500px;
