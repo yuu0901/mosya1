@@ -281,32 +281,40 @@ section{
 
 /* 創設者の思い */
 .mana-box{
+  position: relative;
+}
+.mana-box li{
   position: absolute;
 }
-.sousetu-back{
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
-  position: relative;
- 
+.mana-box .s-title{
+  top: 10px;
 }
-
+.mana-box .s-title2{
+  top: 50px;
+  left: -3px;
+}
+.mana-box .s-title3{
+  top: 100px;
+  left: -3px;
+}
+.mana{
+  position: absolute;
+  top: 170px;
+  left: 480px;
+}
 .blue-color{
   width: 100%;
   
 }
-.mana{
+.mana-box img{
+  width: 100vw;
+  margin-left: -5%;
+}
+.mana img{
   width: 500px;
   height: 400px;
 }
-.manabusan{
-  background-color: powderblue;
-}
-.mittani{
-  background-color: lightgoldenrodyellow;
-}
-.s-black{
-  font-weight: bold;
-}
+
 /* 運営者 */
 .unei{
   width: 250px;
@@ -318,6 +326,15 @@ section{
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.manabusan{
+  background-color: powderblue;
+}
+.mittani{
+  background-color: lightgoldenrodyellow;
+}
+.s-black{
+  font-weight: bold;
 }
 /* Codebeginのメンバー */
 .p-menber{
