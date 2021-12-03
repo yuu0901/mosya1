@@ -233,16 +233,38 @@ section{
 
 /* メリットのバナー */
 .s-banner{
-  width: 100vw;
+  height: 500px;
 }
 .banner{
-  margin: 0 -50px 20px -50px;
-  width: 1020px;
-  height: 450px;
+  margin-left: -5%;
+  width: 100vw;
+  height: 500px;
+  position: absolute;
 }
-.s-p4{
+/* メリットバナーの文字 */
+.p-banner{
+  text-align: center;
+  position: relative;
+  top: 70px;
+}
+.b-p1{
+  font-size: 25px;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+.b-p2{
   font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.b-p3{
+  font-size: 18px;
+}
+.b-p5{
+  color: olivedrab;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 .shot-red{
   color: red;
@@ -254,10 +276,7 @@ section{
   font-size: 40px;
 
 }
-.s-p5{
-  color: olivedrab;
-  font-weight: bold;
-}
+
 
 
 /* 創設者の思い */
