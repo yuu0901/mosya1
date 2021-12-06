@@ -283,6 +283,8 @@ section{
 .mana-box{
   position: relative;
 }
+
+/* タイトル */
 .mana-box li{
   position: absolute;
 }
@@ -297,6 +299,8 @@ section{
   top: 100px;
   left: -3px;
 }
+
+/* 写真 */
 .mana{
   position: absolute;
   top: 170px;
@@ -315,6 +319,26 @@ section{
   height: 400px;
 }
 
+/* 文字 */
+.mana-p{
+  background: white;
+  padding: 50px;
+  margin-right: 380px;
+  position: absolute;
+  bottom: 50px;
+  box-shadow: 30px -30px rgba(255,255,255,0.5);
+}
+.m-p3{
+  font-size: 20px;
+  padding-bottom: 20px;
+  line-height: 40px;
+}
+.s-black{
+  font-weight: bold;
+}
+
+
+
 /* 運営者 */
 .unei{
   width: 250px;
@@ -327,22 +351,56 @@ section{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.manabusan{
+/* マナブさんの紹介 */
+.u-manabusan{
   background-color: powderblue;
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  margin-top: 200px;
+  margin-bottom: 100px;
 }
-.mittani{
+
+/* みったにさんの紹介 */
+.u-mittani{
   background-color: lightgoldenrodyellow;
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  margin-left: 125px;
+  margin-top: 200px;
+  margin-bottom: 100px;
 }
-.s-black{
+/* 2人の共通部分 */
+.unei{
+  position: relative;
+  top: -120px;
+  left: 75px;
+}
+.u-name{
+  text-align: center;
+  position: relative;
+  top: -50px;
   font-weight: bold;
+  font-size: 25px;
 }
+.u-p3{
+  padding: 0px 50px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+
+
 /* Codebeginのメンバー */
 .p-menber{
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   letter-spacing: 5px;
   text-align: center;
 }
+
+
 /* バナー２ */
 .banner1{
   width: 100%;
