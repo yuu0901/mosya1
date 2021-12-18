@@ -1,25 +1,212 @@
+/*----------------------------------------------------------*/
+/* base */
+/*----------------------------------------------------------*/
 body {
-    background: #fff;
-  }
-  .container {
-    width: 1000px;
-    margin: 0 auto;
-  }
-
-
-/* ヘッダー */
-header{
-  background-color: white;
-  padding: 8px;
+  font-family: Noto, "Hiragino Sans", Helvetica, Arial, sans-serif;
+  color: #212121;
+  font-size: 16px;
+  background-color: #fff;
 }
-  .h-img {
-    width: 250px;
-    height: 40px;
-    margin-right: 20px;
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.pc-br {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .pc-br {
+    display: none;
   }
+}
+
+/*----------------------------------------------------------*/
+/* componet */
+/*----------------------------------------------------------*/
+/* button */
+.button {
+  display: inline-block;
+  transition: 0.3s;
+  text-align: center;
+  background-color: #3dcfd4;
+  border-radius: 7px;
+  color: white;
+  padding: 20px 35px;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing:0.8px;
+}
+.button.--small {
+  font-size: 16px;
+  padding: 15px 25px;
+}
+.button:hover {
+  color: white;
+  background-color: #65dadc;
+}
+@media screen and(max-width: 767px) {
+  .button{
+    font-size: 20px;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+}
+/* container */
+.container {
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 95%;
+}
+.container.--large {
+  max-width: 1360px;
+  width: 98%;
+}
+
+/*----------------------------------------------------------*/
+/* header */
+/*----------------------------------------------------------*/
+.header {
+  background-color: #f5f7f7;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header__right {
+  display: block;
+}
+.header__logo {
+  max-width: 225px;
+  margin: 0 22px 0 0;
+}
+.header__tagline {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.8px;
+}
+
+@media screen and(max-width: 767px){
+  .header{
+    height: 20vh;
+  }
+  .header__inner {
+    justify-content: center;
+  }
+  .header__left {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header__right {
+    display: none;
+  }
+  .header__logo {
+    margin-bottom: 10px;
+  }
+  .header__tagline {
+    font-size: 11px;
+  }
+}
+/*----------------------------------------------------------*/
+/* 見入り（メインビジュアル） */
+/*----------------------------------------------------------*/
+.main-v{
+  background: #f5f7f7;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-v__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-v__left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main-v__right{
+  max-width: 50%;
+}
+.main-v__right img{
+  max-width: 610px;
+  max-height: 70vh;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: contain;
+}
+.main-v__headline{
+  font-size: 32px;
+  letter-spacing: 1.7px;
+  font-weight: bold;
+}
+.main-v__headline.--bold{
+  font-size: 55px;
+  letter-spacing: 8px;
+  margin-bottom: 2vh;
+  display: block;
+}
+.main-v__excerpt{
+  margin-top: 3vh;
+  font-size: 22px;
+  letter-spacing: 1.6px;
+  margin-bottom: 3vh;
+}
+
+@media screen and (max-width: 767px) {
+  .main-v{
+    min-height: 80vh;
+  }
+  .main-v__innner{
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+  .main-v__left{
+    justify-content: space-around;
+    max-width: 100%;
+  }
+  .main-v__right{
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .main-v__right img {
+    display: block;
+    width: 80%;
+    max-width: 450px;
+    height: auto;
+    max-height: 30vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1vh;
+  }
+  .main-v__headline{
+    font-size: 21px;
+  }
+  .main-v__headline.--bold{
+    font-size: 36px;
+  }
+  .main-v__excerpt{
+    font-size: 15px;
+  }
+}
 
 
-/* メインを分割 */
   .m-head{
     display: flex;
     flex-direction: row;
@@ -457,4 +644,11 @@ footer{
 .p-f{
   font-weight: lighter;
   text-align: center;
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width:480){
+  
+  
 }
