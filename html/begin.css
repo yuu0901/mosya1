@@ -42,15 +42,24 @@ img {
   font-size: 16px;
   padding: 15px 25px;
 }
+.button.--center{
+  display: block;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .button:hover {
   color: white;
   background-color: #65dadc;
 }
-@media screen and(max-width: 767px) {
+@media screen and (max-width: 767px) {
   .button{
     font-size: 20px;
     padding: 20px 0;
     width: 100%;
+  }
+  .button.--center{
+    width: 95%;
   }
   
 }
@@ -64,6 +73,63 @@ img {
 .container.--large {
   max-width: 1360px;
   width: 98%;
+}
+
+/* headline */
+.headline{
+  text-align: left;
+  margin-bottom: 40px;
+}
+.headline__min{
+  padding-left: 20px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.headline__min:before{
+  margin-right: 15px;
+  content: "";
+  width: 14px;
+  height: 3.5px;
+  background: #3dcfd4;
+}
+.headline__item{
+  text-align: left;
+  font-size: 27px;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+}
+.headline__item.--bold{
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+  font-size: 42px;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+}
+@media screen and (max-width: 767px){
+  .headline__min{
+    font-size: 10px;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  .headline__min:before{
+    width: 8px;
+    height: 2px;
+    margin-right: 6px;
+  }
+  .headline__item{
+    font-size: 16px;
+    text-align: center;
+  }
+  .headline__item.--bold{
+    font-size: 28px;
+  }
 }
 
 /*----------------------------------------------------------*/
@@ -100,7 +166,7 @@ img {
   letter-spacing: 0.8px;
 }
 
-@media screen and(max-width: 767px){
+@media screen and (max-width: 767px){
   .header{
     height: 20vh;
   }
@@ -173,7 +239,7 @@ img {
   .main-v{
     min-height: 80vh;
   }
-  .main-v__innner{
+  .main-v__inner{
     flex-direction: column-reverse;
     flex-wrap: nowrap;
   }
@@ -206,154 +272,162 @@ img {
   }
 }
 
+/*----------------------------------------------------------*/
+/* コミュニティ内容 about */
+/*----------------------------------------------------------*/
+.about{
+  background-color: #f5f7f7;
+  padding-bottom: 110px;
+}
+.about__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__img img{
+  display: block;
+  max-width: 450px;
+  margin: 0;
+}
+.about__item{
+  width: 50%;
+}
+.about__num{
+  display: inline-block;
+  background: linear-gradient(transparent 60%, #eeec50 60%);
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+.about__headline{
+  margin-bottom: 20px;
+  font-size: 29px;
+  line-height: 2;
+  font-weight: bold;
+}
+.about__text{
+  font-size: 16px;
+  line-height: 2;
+}
 
-  .m-head{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 50px;
+.about__inner + .about__inner{
+  margin-top: 140px;
+}
+.about__inner:last-child{
+  margin-bottom: 100px;
+}
+.about__inner.--reverse{
+  flex-direction: row-reverse;
+}
+
+@media  screen and (max-width: 767px) {
+  .about{
+    padding-bottom: 60px;
   }
-/* メイン画像 */
-  .m-img-main {
-    width: 450px;
-    height: 450px;
+  .about__inner{
+    flex-direction: column;
   }
-/* メインの文字 */
-  .m-main{
-    padding-top: 40px;
+  .about__inner + .about__innner{
+    margin-top: 40px;
   }
-  .m-title {
-    font-weight: bolder;
-    font-size: 60px;
-    letter-spacing: 5px;
-    margin-bottom: 10px;
+  .about__inner.--reverse{
+    flex-direction: column;
   }
-  .m-title2 {
-    font-size: 40px;
-    font-weight: bolder;
-    letter-spacing: 5px;
+  .about__img img{
     margin-bottom: 30px;
   }
-  .m-title3{
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
+  .about__item{
+    width: 100%;
   }
-
-
-/* コミュニティ題名 */
-section{
-  padding-top: 40px;
-}
-.s-title{
-  font-size: 20px;
-  letter-spacing: 3px;
-  margin-bottom: 15px;
-}
-.s-title2{
-  font-size: 30px;
-  letter-spacing: 3px;
-  margin-bottom: 15px;
-}
-.s-title3{
-  font-weight: bold;
-    font-size: 40px;
-    letter-spacing: 5px;
-    margin-bottom: 10px;
+  .about__num{
+    font-size: 20px;
+  }
+  .about__headline{
+    font-size: 25px;
+  }
+  .about-text{
+    font-size: 14px;
+  }
 }
 
 
-/* コミュニティ内容の全体*/
-/* point1 */
-.s-box1{
+/*----------------------------------------------------------*/
+/* ロードマップ表（カリキュラム） */
+/*----------------------------------------------------------*/
+.curiculum{
+  background-color: #f2e0d5;
+  padding: 72px 0;
+  margin-bottom: 98px;
+}
+.curiculum__inner{
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
 }
-.s-part1{
-  margin: 50px 20px 50px 50px;
-  font-size: 20px;
+.curiculum__img{
+  width: 30%;
+  margin-right: 100px;
 }
-.under{
-  background: linear-gradient(transparent 60%,yellow 50%)
+.curiculum__items{
+  width: 60%;
 }
-.s-img{
-  width: 450px;
-  height: 350px;
-}
-/* point2 */
-.s-box2{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 100px 0px;
-}
-.s-img02{
-  width: 470px;
-  height: 200px;
-  margin-top: 50px;
-}
-.s-part2{
-  margin-right: 30px;
-}
-/* point3 */
-.s-box3{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-.s-part3{
-  margin: 50px 20px 50px 50px;
-  font-size: 20px;
-}
-/* pointの文字 */
-.s-p1{
-  font-size: 25px;
+.curiculum__headline{
   font-weight: bold;
-  margin-bottom: 10px;
-}
-.s-p2{
-  font-size: 27px;
-  font-weight: bold;
-  letter-spacing: 3px;
+  font-size: 26px;
+  line-height: 1.5;
   margin-bottom: 20px;
 }
-.s-p3{
-  font-size: 18px;
-  line-height: 40px;
+.curiculum__text{
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 30px;
 }
-/* ボタン */
-.s-button{
-  text-align: center;
-  margin: 40px 0px 70px 0px;
+.curiculum__button{
+  font-size: 18px;
+}
+@media screen and (max-width: 767){
+  .curiculum{
+    margin-bottom: 60px;
+  }
+  .curiculum__inner{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .curiculum__img{
+    width: 70%;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .curiculum__items{
+    width: 100%;
+  }
+  .curiculum__headline{
+    font-size: 24px;
+  }
+  .curiculume__text{
+    font-size: 14px;
+  }
+  .curiculum__button{
+    font-size: 14px;
+    text-align: left;
+    padding: 13px 26px;
+  }
 }
 
-/* ロードマップ表 */
-.s-rod{
-  background-color: papayawhip;
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
-  height: 450px;
-  margin-bottom: 40px;
-}
-.r-box1{
-  display: flex;
-  flex-direction:row-reverse;
-  justify-content: space-between;
-}
-.map{
-  margin-top: 40px;
-  margin-left: 100px;
-}
-.r-button{
-  margin-top: 30px;
-}
-.rodmap{
-  width: 300px;
-  height: 300px;
-  margin-top: 40px;
-}
+
+
+
+
+
+
+
+
+
+
+  
+
 
 
 /* メリット内容 */
