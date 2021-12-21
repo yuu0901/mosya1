@@ -91,6 +91,9 @@ img {
   align-items: center;
   position: relative;
 }
+.headline.--center .headline__min{
+  justify-content: center;
+}
 .headline__min:before{
   margin-right: 15px;
   content: "";
@@ -103,6 +106,9 @@ img {
   font-size: 27px;
   line-height: 1.5;
   letter-spacing: 0.8px;
+}
+.headline.--center .headline__item{
+  text-align: center;
 }
 .headline__item.--bold{
   font-weight: bold;
@@ -415,6 +421,35 @@ img {
     padding: 13px 26px;
   }
 }
+
+
+/*----------------------------------------------------------*/
+/* ベネフィット */
+/*----------------------------------------------------------*/
+.benefit{
+  margin-bottom: 120px;
+}
+.benefit-cards{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.benefit-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% ~ 40px)/3);
+  padding: 100px 40px;
+  border-radius: 10px;
+}
+.benefit-card__img
+
+
+
+
+
+
 
 
 
