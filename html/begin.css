@@ -137,6 +137,16 @@ img {
     font-size: 28px;
   }
 }
+/* backgroun-color */
+.--purple{
+  background-color: #e0eaff;
+}
+.--lightgreen{
+  background-color: #f4f8d7;
+}
+.--lightorenge{
+  background-color: #faf3eb;
+}
 
 /*----------------------------------------------------------*/
 /* header */
@@ -392,7 +402,7 @@ img {
 .curiculum__button{
   font-size: 18px;
 }
-@media screen and (max-width: 767){
+@media screen and (max-width: 767px){
   .curiculum{
     margin-bottom: 60px;
   }
@@ -439,12 +449,50 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: calc((100% ~ 40px)/3);
+  width: calc((100% - 40px) / 3);
   padding: 100px 40px;
   border-radius: 10px;
 }
-.benefit-card__img
+.benefit-card__img{
+  width: 100px;
+  margin-bottom: 50px;
+}
+.benefit-card__headline{
+  color: #df1a1a;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.benefit__text{
+  font-size: 16px;
+  line-height: 2;
+}
 
+@media screen and (max-width: 767px){
+  .benefit {
+    margin-bottom: 64px;
+  }
+  .benefit-cards {
+    flex-wrap: wrap;
+  }
+  .benefit-card{
+    width: 100%;
+    padding: 50px 30px;
+  }
+  .benefit-card + .benefit-card {
+    margin-top: 30px;
+  }
+  .benefit-card__img {
+    margin-bottom: 30px;
+  }
+  .benefit__headline {
+    font-size: 24px;
+  }
+  .benefit__text {
+    max-width: 400px;
+    font-size: 14px;
+  }
+}
 
 
 
@@ -616,24 +664,6 @@ img {
 }
 
 /* 文字 */
-.mana-p{
-  background: white;
-  padding: 50px;
-  margin-right: 380px;
-  position: absolute;
-  bottom: 50px;
-  box-shadow: 30px -30px rgba(255,255,255,0.5);
-}
-.m-p3{
-  font-size: 20px;
-  padding-bottom: 20px;
-  line-height: 40px;
-}
-.s-black{
-  font-weight: bold;
-}
-
-
 
 /* 運営者 */
 .unei{
