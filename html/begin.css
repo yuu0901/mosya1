@@ -63,6 +63,25 @@ img {
   }
   
 }
+/* mcopy */
+.mcopy{
+  text-align: center;
+  color: #268f84;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 2;
+  position: relative;
+}
+.mcopy:before{
+  margin-right: 1.5rem;
+  content: "＼";
+}
+mcopy:after{
+  margin-left: 1.5rem;
+  content: "／";
+}
+
 /* container */
 .container {
   max-width: 1120px;
@@ -494,11 +513,76 @@ img {
   }
 }
 
+/*----------------------------------------------------------*/
+/* price */
+/*----------------------------------------------------------*/
+.price{
+  background-color: #f5edf3;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  background-image: url(banner02-bg-pc.jpg);
+}
+.price__inner{
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.price__headline{
+  margin-bottom: 25px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center; 
+}
+.price__bold{
+  font-size: 30px;
+  display: block;
+}
+.price__redbold{
+  color: red;
+  font-size: 30px;
+}
+.price__text{
+  text-align: center;
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 45px;
+}
 
+@media screen and (max-width: 767px){
+  .price{
+    background-image: url(banner02-bg-pc.jpg);
+    padding-bottom: 14px;
+  }
+  .price__inner{
+    max-width: 100%;
+  }
+  .price__bold{
+    font-size: 26px;
+  }
+  price__redbold{
+    font-size: 26px;
+  }
+  .price__text{
+    font-size: 13px;
+  }
+  
+}
 
-
-
-
+/*----------------------------------------------------------*/
+/* philosophy */
+/*----------------------------------------------------------*/
+.philosophy{
+  background-image: url(bg_color-pc.jpg);
+  padding-top: 90px;
+  padding-bottom: 400px;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+}
 
 
 
@@ -513,113 +597,6 @@ img {
 
 
 
-/* メリット内容 */
-/* メリット題名 */
-.s-meritto{
- text-align: center;
- margin-bottom: 50px;
-}
-
-/* メリット1つ目 */
-.s-m01{
-  height: 550px;
-  width: 300px;
-  background-color: lightsteelblue;
-  border-radius: 10px;
-  margin: 20px 10px 30px 0px;
-}
-
-/* メリット2つ目 */
-.s-m02{
-  height: 550px;
-  width: 300px;
-  background-color: lightgoldenrodyellow;
-  border-radius: 10px;
-  margin: 20px 10px 30px 10px;
-}
-
-/* メリット3つ目 */
-.s-m03{
-  height: 550px;
-  width: 300px;
-  background-color: oldlace;
-  border-radius: 10px;
-  margin: 20px 0px 30px 10px;
-}
-
-/* メリットの中身（文字や写真） */
-.s-red{
-  position: relative;
-  top: 120px;
-  color: red;
-  font-size: 30px;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 40px;
-}
-.merit{
-  position: relative;
-  top: 100px;
-  left: 100px;
-  width:100px;
-  height: 100px;
-}
-.p-meritto{
-  position: relative;
-  top: 150px;
-  font-size: 18px;
-  padding-left: 40px;
-  padding-right: 40px;
-  line-height: 30px;
-}
-
-
-
-/* メリットのバナー */
-.s-banner{
-  height: 500px;
-}
-.banner{
-  margin-left: -5%;
-  width: 100vw;
-  height: 500px;
-  position: absolute;
-}
-/* メリットバナーの文字 */
-.p-banner{
-  text-align: center;
-  position: relative;
-  top: 70px;
-}
-.b-p1{
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.b-p2{
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-.b-p3{
-  font-size: 18px;
-}
-.b-p5{
-  color: olivedrab;
-  font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-.shot-red{
-  color: red;
-  font-size: 20px;
-  font-weight: bold;
-}
-.b-red{
-  color: red;
-  font-size: 40px;
-
-}
 
 
 
