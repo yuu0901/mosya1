@@ -583,8 +583,55 @@ mcopy:after{
   background-repeat: no-repeat;
   margin-bottom: 60px;
 }
+.philosophy-contents{
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.philosophy-contents__img{
+  margin-bottom: 36px;
+  width: 50%;
+}
+.philosophy-content{
+  background-color: white;
+  width: 60%;
+  max-width: 600px;
+  padding: 50px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 1;
+}
+.philosophy-content:before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.5;
+  position: absolute;
+  top: -5%;
+  right: -5%;
+  z-index: -1;
+}
+.philosophy-content__text{
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 2;
+}
+.philosophy-content__text.--bold{
+  font-weight: bold;
+}
 
-
+@media screen and (max-width: 767px){
+  .philosophy{
+    padding-top: 50px;
+    padding-bottom: 160px;
+    margin-bottom: 0;
+    background-image: url(bg_color.jpg);
+    background-size: 100% 120%;
+    background-position: 0 30%;
+  }
+}
 
 
 
