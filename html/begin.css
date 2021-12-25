@@ -631,8 +631,41 @@ mcopy:after{
     background-size: 100% 120%;
     background-position: 0 30%;
   }
+  .philosophy-contents{
+    margin-top: 42px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .philosophy-contents__img{
+    width: 100%;
+  }
+  .philosophy-content{
+    width: 100%;
+    padding: 20px 10px 10px 20px;
+    position: relative;
+    top: 0;
+    left: -5%;
+  }
+  .philosophy-content:before{
+    top: -3%;
+    right: -7%;
+  }
+  .philosophy-comtent__text{
+    font-size: 14px;
+  }
 }
 
+/*----------------------------------------------------------*/
+/* コミュニティ */
+/*----------------------------------------------------------*/
+.community{
+  margin-bottom: 120px;
+}
+.community__contents{
+  margin-top: 200px;
+  display: flex;
+  jsutify-content:
+}
 
 
 
