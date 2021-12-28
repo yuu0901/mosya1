@@ -1,0 +1,50 @@
+.swiper-container {
+    width: calc(100% - 72px); /* 左右のボタンの大きさ + 余白分だけ差し引く */
+    padding-bottom: 36px; /* ページネーション用の余白 */
+  }
+  /* 前ページ、次ページボタン共通 */
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: calc((100% - 36px) * 0.5); /* ページネーション（36px）を除く縦位置の中央（＝スライドの高さの中央）に一旦配置 */
+    width: 36px; /* ボタンの幅 */
+    height: 36px; /* ボタンの高さ */
+    background-size: 36px 36px; /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
+    margin-top: -18px; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /* 次ページボタン */
+  .swiper-button-next {
+    background-image: url(../img/arrow-right.svg);
+  }
+  .swiper-button-next:after {
+    display: none; /* もともとのボタンは削除 */
+  }
+  /* 前ページボタン */
+  .swiper-button-prev {
+    background-image: url(../img/arrow-right.svg);
+    transform: scale(-1, 1); /* 左右反転 */
+  }
+  .swiper-button-prev:after {
+    display: none; /* もともとのボタンは削除 */
+  }
+  @media screen and (max-width: 767px) {
+    .swiper-button-next {
+      right: 0;
+    }
+    .swiper-button-prev {
+      left: 0;
+    }
+  }
+  /* ページネーションの色と大きさ */
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #d7d7d7;
+  }
+  .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background-color: #30d1c0;
+  }
+  
