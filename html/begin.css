@@ -879,37 +879,87 @@ img {
     transition: transform 0.2s;
     margin-left: auto;
   }
+  .-active .faq__q:after{
+    transform: rotate(-180deg);
+  }
+  .faq__a-inner{
+    padding: 22px 14px 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
+.faq__q-icon,
+.faq__a-icon {
+  font-weight: bold;
+  font-size: 26px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.faq__q-icon {
+  color: #cc3399;
+}
+.faq__a-icon {
+  color: #728295;
+}
+.faq__q-text,
+.faq__a-text {
+  font-size: 21px;
+  line-height: 1.5;
+  width: 85%;
+  letter-spacing: 0.8px;
+}
+.faq__a {
+  display: none;
+}
 
+@media screen and (max-width: 767px) {
+  .faq {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+  .faq__q:after {
+    width: 32px;
+    height: 12px;
+    background: url(../img/arrow.svg) center center no-repeat;
+  }
+  .faq__q-icon,
+  .faq__a-icon {
+    font-size: 18px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 30px;
+  }
+  .faq__q-text,
+  .faq__a-text {
+    width: 95%;
+    font-size: 13px;
+  }
+}
 
+/*----------------------------------------------------------*/
+/* footer */
+/*----------------------------------------------------------*/
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 10px;
+}
 
+.footer__logo {
+  max-width: 130px;
+}
 
-
-/* 質問コーナー */
-.faq{
-  text-align: center;
+.footer__copy {
+  font-size: 10px;
+  line-height: 3;
+  letter-spacing: 1.5px;
 }
 
 
-/* フッター */
-footer{
-  background-color: white;
-}
-.f-logo{
-  text-align: center;
-}
-.f-img{
-  width: 120px;
-  height: 20px;
-}
-.p-f{
-  font-weight: lighter;
-  text-align: center;
-}
 
 
-/* レスポンシブ */
-@media screen and (max-width:480){
-  
-  
-}
+
+
